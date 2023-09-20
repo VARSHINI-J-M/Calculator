@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="CALCULATOR"
+        android:textAlignment="center"
+        android:textColor="#0D16CA"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/op1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter first number"
+        android:inputType="number|numberDecimal|numberSigned"
+        android:textColor="#137EB6"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/op2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter second number"
+        android:inputType="number|numberDecimal|numberSigned"
+        android:textColor="#137EB6"
+        android:textSize="20sp" />
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="352dp">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="114dp"
+            android:layout_height="62dp"
+            android:layout_x="48dp"
+            android:layout_y="41dp"
+            android:text="ADD"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="114dp"
+            android:layout_height="62dp"
+            android:layout_x="227dp"
+            android:layout_y="41dp"
+            android:text="SUB"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="114dp"
+            android:layout_height="62dp"
+            android:layout_x="48dp"
+            android:layout_y="153dp"
+            android:text="MUL"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="114dp"
+            android:layout_height="62dp"
+            android:layout_x="227dp"
+            android:layout_y="151dp"
+            android:text="DIV"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/clr"
+            android:layout_width="152dp"
+            android:layout_height="62dp"
+            android:layout_x="129dp"
+            android:layout_y="247dp"
+            android:text="CLEAR"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </AbsoluteLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESULT"
+        android:textAlignment="center"
+        android:textColor="#941BEA"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="0.00"
+        android:textAlignment="center"
+        android:textColor="#2A086A"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+</LinearLayout>
